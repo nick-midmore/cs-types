@@ -23,7 +23,7 @@ namespace CSTypes
 
             if (charArray)
             {
-                Console.WriteLine(result.ToString().ToCharArray() + "hello");
+                Console.WriteLine(result.ToString().ToCharArray());
             }
             else 
             {
