@@ -13,8 +13,6 @@ namespace CSTypes
             float myFloat = 3.80f;
             string myString = "h";
             double myDouble = 2.5;
-
-            
         }
     }
 }
