@@ -1,10 +1,10 @@
 ﻿namespace CSTypes
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Task00.Run();
         }
     }
 }
