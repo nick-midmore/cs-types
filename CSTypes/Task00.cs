@@ -11,6 +11,17 @@ namespace CSTypes
         public static void Run()
         {
             Console.WriteLine("This works!");
+            Car myCar = new Car();
+            Car NicksCar = new Car();
+            Car copyOfMyCar = myCar;
+            myCar.makeNoise();
+
+            Console.WriteLine(myCar==NicksCar);
+            Console.WriteLine(myCar==copyOfMyCar);
+            Console.WriteLine(myCar.GetType());
+            Console.WriteLine(myCar.Equals(NicksCar));
+            Console.WriteLine(System.Object.ReferenceEquals(myCar, copyOfMyCar));
+            
         }
     }
 }
