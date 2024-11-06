@@ -14,7 +14,7 @@ namespace CSTypes
             Car myCar = new Car();
             Car NicksCar = new Car();
             Car copyOfMyCar = myCar;
-            myCar.makeNoise();
+            myCar.MakeNoise();
 
             Console.WriteLine(myCar==NicksCar);
             Console.WriteLine(myCar==copyOfMyCar);

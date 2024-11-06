@@ -8,9 +8,9 @@ namespace CSTypes
 {
     public class Car
     {
-        public string Brand { get; set; }
+        public string Brand { get; set; } = "BMW";
 
-        public void makeNoise() 
+        public virtual void MakeNoise() 
         {
             Console.WriteLine("Beep");
         }

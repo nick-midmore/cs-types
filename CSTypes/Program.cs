@@ -12,10 +12,20 @@ namespace CSTypes
             //Task04.MultiplyInt((int)2.2, (int)4.9m);
             //Task05.ConvertToDouble();
 
-            Console.WriteLine("Please provide new student as JSON:");
-            NorthcodersStudent studentFromJSON = JsonSerializer.Deserialize<NorthcodersStudent>(Console.ReadLine());
+            //Console.WriteLine("Please provide new student as JSON:");
+            //NorthcodersStudent studentFromJSON = JsonSerializer.Deserialize<NorthcodersStudent>(Console.ReadLine());
 
-            Console.WriteLine(studentFromJSON.Name);
+            //Console.WriteLine(studentFromJSON.Name);
+
+            Car myCar = new Car();
+            Car mySecondCar = new Car();
+            mySecondCar.Brand = "Ford";
+            myCar.MakeNoise();
+            SportsCar mySportsCar = new SportsCar();
+            mySportsCar.MakeNoise();
+            mySportsCar.ToString();
+            Console.WriteLine(mySportsCar.Equals(mySecondCar));
+            
         }
     }
 }
