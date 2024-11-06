@@ -16,9 +16,20 @@ namespace CSTypes
             Console.WriteLine("Enter a decimal:");
             decimal decInput = Convert.ToDecimal(Console.ReadLine());
 
+            Console.WriteLine("Return answer as char array? (true/false):");
+            bool charArray = Convert.ToBoolean(Console.ReadLine());
+
             double result = Convert.ToDouble(intInput / decInput);
 
-            Console.WriteLine(result);
+            if (charArray)
+            {
+                Console.WriteLine(result.ToString().ToCharArray() + "hello");
+            }
+            else 
+            {
+                Console.WriteLine(result);
+            }
+
         }
     }
 }
